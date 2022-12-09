@@ -7,12 +7,12 @@ module.exports = {
         index: './src/js/main.js'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'js/[name].bundle.js'
     },
     devServer: {
         static: {
-          directory: path.join(__dirname, 'dist')
+          directory: path.join(__dirname, 'build')
         }
     },
     plugins: [ new HTMLWebpackPlugin({
